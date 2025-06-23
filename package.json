@@ -1,0 +1,24 @@
+{
+  "name": "upload-widget-server",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Upload files and photos to the server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx watch src/infra/http/server.ts"
+  },
+  "author": "Andre Cantarino",
+  "license": "ISC",
+  "devDependencies": {
+    "@biomejs/biome": "^2.0.5",
+    "@fastify/cors": "^11.0.1",
+    "@tsconfig/node22": "^22.0.2",
+    "@types/node": "^24.0.3",
+    "fastify": "^5.4.0",
+    "fastify-type-provider-zod": "^5.0.1",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "zod": "^3.25.67"
+  }
+}
