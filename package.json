@@ -5,8 +5,9 @@
   "description": "Upload files and photos to the server",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tsx watch --env-file .env src/infra/http/server.ts"
+    "dev": "tsx watch --env-file .env src/infra/http/server.ts",
+    "test": "dotenv -e .env.test -- vitest run",
+    "test:watch": "dotenv -e .env.test -- vitest"
   },
   "author": "Andre Cantarino",
   "license": "ISC",
@@ -20,10 +21,13 @@
     "@fastify/cors": "^11.0.1",
     "@tsconfig/node22": "^22.0.2",
     "@types/node": "^24.0.3",
+    "dotenv-cli": "^8.0.0",
     "fastify": "^5.4.0",
     "fastify-type-provider-zod": "^5.0.1",
     "tsx": "^4.20.3",
     "typescript": "^5.8.3",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "^3.2.4",
     "zod": "^3.25.67"
   }
 }
