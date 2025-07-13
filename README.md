@@ -1,2 +1,2 @@
-# rocketseat-upload-widget-server
-rocketseat-upload-widget-server
+# ftr-upload-widget-server
+ftr-upload-widget-server
